@@ -25,14 +25,18 @@
             <input
               type="text"
               class="form-control"
-              placeholder="Enter Task"
+              placeholder="Add Another Todo..."
               aria-label="Enter Task"
               aria-describedby="enter-task"
               id="input-field"
             />
           </div>
           <div class="col-4">
-            <button type="button" class="btn btn-danger me-1" id="add-button">
+            <button
+              type="button"
+              class="btn btn-primary me-1 disabled"
+              id="add-button"
+            >
               Add
             </button>
             <button
@@ -46,7 +50,7 @@
         </div>
 
         <!-- List of todos -->
-        <div class="todo-data">
+        <div id="todo-data">
           <!-- Heading -->
           <div class="row">
             <div
@@ -61,62 +65,7 @@
           </div>
 
           <!-- Lists -->
-          <div class="row">
-            <div
-              class="todo-item text-muted d-flex flex-row justify-content-center align-items-center"
-            >
-              <div class="todo-no text-dark">1.</div>
-              <div class="todo-task">Tasks to add here</div>
-              <div class="todo-status">Completed</div>
-              <div class="todo-actions">
-                <button type="button" class="btn btn-danger px-3 me-2">
-                  Delete
-                </button>
-                <button type="button" class="btn btn-success px-3">
-                  Finished
-                </button>
-              </div>
-            </div>
-            <hr />
-          </div>
-
-          <div class="row">
-            <div
-              class="todo-item text-muted d-flex flex-row justify-content-center align-items-center"
-            >
-              <div class="todo-no text-dark">1.</div>
-              <div class="todo-task">Tasks to add here</div>
-              <div class="todo-status">Completed</div>
-              <div class="todo-actions">
-                <button type="button" class="btn btn-danger px-3 me-2">
-                  Danger
-                </button>
-                <button type="button" class="btn btn-success px-3">
-                  Success
-                </button>
-              </div>
-            </div>
-            <hr />
-          </div>
-
-          <div class="row">
-            <div
-              class="todo-item text-muted d-flex flex-row justify-content-center align-items-center"
-            >
-              <div class="todo-no text-dark">1.</div>
-              <div class="todo-task">Tasks to add here</div>
-              <div class="todo-status">Completed</div>
-              <div class="todo-actions">
-                <button type="button" class="btn btn-danger px-3 me-2">
-                  Danger
-                </button>
-                <button type="button" class="btn btn-success px-3">
-                  Success
-                </button>
-              </div>
-            </div>
-            <hr />
-          </div>
+          <div id="todo-data-listing"></div>
         </div>
       </div>
     </div>
