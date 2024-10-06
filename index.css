@@ -21,7 +21,7 @@ html {
 
 .todo-item {
   font-size: 1.1rem;
-  margin-bottom: 0.6rem;
+  margin: 0.7rem 0;
 }
 
 .todo-no {
@@ -38,4 +38,8 @@ html {
 
 .todo-actions {
   flex-basis: 20%;
+}
+
+hr {
+  margin: 0;
 }
